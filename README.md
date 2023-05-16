@@ -26,3 +26,18 @@ Xorg (may work on some generic setups):
 # Rectangular
 
 Use `hyperpixel4-rotate` followed by one of `left`, `right`, `normal` or `inverted`.
+
+`left` and `right` correspond to landscape orientation, `normal` and `inverted` correspond to portrait.
+
+## Config Files Affected
+
+Lightdm/udev on Raspberry Pi OS:
+
+* `/etc/udev/rules.d/98-hyperpixel4-calibration.rules`
+
+Xorg (may work on some generic setups):
+
+* `/usr/share/X11/xorg.conf.d/88-hyperpixel4-touch.conf`
+* `/usr/share/X11/xorg.conf.d/88-dpi-1-rotate.conf`
+
+
